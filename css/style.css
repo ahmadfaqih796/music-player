@@ -16,7 +16,7 @@ body {
    width: 350px;
    height: 550px;
    border-radius: 20px;
-   background: rgb(157, 153, 153);
+   background: #5f7461;
    box-shadow: 0 40px 100px rgb(82, 82, 82);
    padding: 30px;
    overflow: hidden;
@@ -47,4 +47,38 @@ body {
    background-image: url('../assets/images/Gurenge_Cover.webp');
    background-size: cover;
    box-shadow: 0 0 0 10px rgb(255, 255, 255, 0.08);
+}
+.disk::before{
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #5f7461;
+}
+
+.song-slider {
+   width: 100%;
+   position: relative;
+}
+
+.seek-bar {
+   -webkit-appearance: none;
+   width: 100%;
+   height: 5px;
+   border-radius: 10px;
+   background: #5fc8a9;
+   overflow: hidden;
+   cursor: pointer;
+}
+.seek-bar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   width: 1px;
+   height: 20px;
+   background: #000;
+   /* ngasih efek warna di belakang thumb slider */
+   box-shadow: -400px 0 0 400px #d5eebb;
 }
