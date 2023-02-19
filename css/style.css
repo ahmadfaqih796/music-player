@@ -82,3 +82,12 @@ body {
    /* ngasih efek warna di belakang thumb slider */
    box-shadow: -400px 0 0 400px #d5eebb;
 }
+
+/* durasi lagu */
+.current-time, .song-duration {
+font-size: 14px;
+}
+.song-duration {
+   position: absolute;
+   right: 0;
+}
