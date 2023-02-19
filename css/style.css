@@ -16,9 +16,23 @@ body {
    width: 350px;
    height: 550px;
    border-radius: 20px;
-   background: rgb(209, 205, 205);
+   background: rgb(157, 153, 153);
    box-shadow: 0 40px 100px rgb(82, 82, 82);
    padding: 30px;
    overflow: hidden;
    color: #d5eebb;
+}
+
+.music-name,
+.artist-name {
+   text-align: center;
+   text-transform: capitalize;
+}
+.music-name {
+   font-size: 40px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.artist-name {
+   font-size: 20px;
 }
