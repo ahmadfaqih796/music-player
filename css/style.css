@@ -36,3 +36,15 @@ body {
 .artist-name {
    font-size: 20px;
 }
+
+.disk{
+   position: relative;
+   display: block;
+   margin: 40px auto;
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   background-image: url('../assets/images/Gurenge_Cover.webp');
+   background-size: cover;
+   box-shadow: 0 0 0 10px rgb(255, 255, 255, 0.08);
+}
