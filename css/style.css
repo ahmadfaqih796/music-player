@@ -48,9 +48,11 @@ body {
    background-size: cover;
    box-shadow: 0 0 0 10px rgb(255, 255, 255, 0.08);
    animation: rotate 20s linear infinite;
+   /* animasi ketika pause */
    animation-play-state: paused;
 }
 .disk.play {
+   /* animasi ketika berjalan */
    animation-play-state: running;
 }
 .disk::before{
