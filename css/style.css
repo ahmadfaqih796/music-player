@@ -47,6 +47,11 @@ body {
    background-image: url('../assets/images/Gurenge_Cover.webp');
    background-size: cover;
    box-shadow: 0 0 0 10px rgb(255, 255, 255, 0.08);
+   animation: rotate 20s linear infinite;
+   animation-play-state: paused;
+}
+.disk.play {
+   animation-play-state: running;
 }
 .disk::before{
    content: '';
@@ -93,9 +98,9 @@ font-size: 14px;
 }
 
 .controls{
-   width: 100%;
+   width: 60%;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    margin: auto;
    margin-top: 20px;
@@ -148,5 +153,27 @@ font-size: 14px;
    }
    100% {
       box-shadow: 0 0 0 5px rgba(255,255,255,0.4);
+   }
+}
+
+
+.btn {
+   width: 40px;
+   height: 40px;
+   background: #d5eebb;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   cursor: pointer;
+}
+
+@keyframes rotate {
+   0%{
+      transform: rotate(0);
+   }
+   100%{
+      transform: rotate(360deg);
    }
 }
