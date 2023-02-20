@@ -109,3 +109,17 @@ font-size: 14px;
    cursor: pointer;
    border: none;
 }
+.play-btn span {
+   position: absolute;
+   top: 50%;
+   left: 25%;
+   transform: translateY(-50%);
+   width: 10px;
+   height: 20px;
+   background-color: #5f7461;
+   transition: all 0.5s;
+}
+.play-btn span:nth-child(2) {
+   left: 55%;
+   transform-origin: center;
+}
