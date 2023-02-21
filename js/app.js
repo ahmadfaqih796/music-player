@@ -1,5 +1,12 @@
 let currentMusic = 0;
 
+const data = document.getElementById("data");
+data.innerHTML = songs
+  .map(
+    (val, index) => `<button onclick="setMusic(${index})">${val.name}</button>`
+  )
+  .join("");
+
 const music = document.querySelector("#audio");
 const seekBar = document.querySelector(".seek-bar");
 const songName = document.querySelector(".music-name");
