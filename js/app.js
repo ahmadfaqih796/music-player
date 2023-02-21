@@ -55,3 +55,13 @@ const formatTime = (time) => {
   }
   return `${min} : ${sec}`;
 };
+
+setInterval(() => {
+  seekBar.value = music.currentTime;
+  currentTime.innerHTML = formatTime(music.currentTime);
+}, 500);
+
+// seekbar ketika di klik dan mengubah durasi
+seekBar.addEventListener("change", () => {
+  music.currentTime = seekBar.value;
+});
