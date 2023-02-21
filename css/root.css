@@ -1,7 +1,17 @@
 .card {
    width: 300px;
-   height: 500px;
+   height: 50vh;
    background: wheat;
    position: absolute;
    left: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.card button {
+   width: 90%;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 20px;
 }
