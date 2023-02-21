@@ -41,7 +41,7 @@ const setMusic = (i) => {
   }, 300);
 };
 
-setMusic(1);
+setMusic(0);
 
 // mendapatkan waktu format
 const formatTime = (time) => {
@@ -64,4 +64,24 @@ setInterval(() => {
 // seekbar ketika di klik dan mengubah durasi
 seekBar.addEventListener("change", () => {
   music.currentTime = seekBar.value;
+});
+
+// forward dan backward button
+forwardBtn.addEventListener("click", () => {
+  if (currentMusic >= songs.length - 1) {
+    currentMusic = 0;
+  } else {
+    currentMusic++;
+  }
+  setMusic(currentMusic);
+  playBtn.click();
+});
+backwardBtn.addEventListener("click", () => {
+  if (currentMusic <= 0) {
+    currentMusic = songs.length - 1;
+  } else {
+    currentMusic--;
+  }
+  setMusic(currentMusic);
+  playBtn.click();
 });
