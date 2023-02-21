@@ -1,32 +1,32 @@
 let songs = [
    {
-      name: "Kimetsu no Yaiba",
+      name: "Gurenge",
       path: "assets/musics/Gurenge.mp3",
       artist: "LISA",
       cover: "assets/images/Gurenge_Cover.webp"
    },
    {
-      name: "ddddddd",
-      path: "assets/musics/Gurenge.mp3",
-      artist: "FAQIH",
+      name: "Mungkin Nanti",
+      path: "assets/musics/Mungkin Nanti.mp3",
+      artist: "Peterpan",
       cover: "assets/images/cover 1.png"
    },
    {
-      name: "2222222",
+      name: "Lagu 1",
       path: "assets/musics/Gurenge.mp3",
       artist: "LISA",
-      cover: "assets/images/Gurenge_Cover.webp"
+      cover: "assets/images/cover 2.png"
    },
    {
-      name: "333333333333",
+      name: "Lagu 2",
       path: "assets/musics/Gurenge.mp3",
       artist: "LISA",
-      cover: "assets/images/Gurenge_Cover.webp"
+      cover: "assets/images/cover 3.png"
    },
    {
-      name: "4444444",
+      name: "Lagu 3",
       path: "assets/musics/Gurenge.mp3",
       artist: "LISA",
-      cover: "assets/images/Gurenge_Cover.webp"
+      cover: "assets/images/cover 4.png"
    },
 ]
