@@ -4,7 +4,7 @@ const data = document.getElementById("data");
 data.innerHTML = songs
   .map(
     (val, index) =>
-      `<button onclick="handleClick(${index})">${val.name}</button>`
+      `<button onclick="handleClick(${index})" class="btn">${val.name}</button>`
   )
   .join("");
 
@@ -20,9 +20,22 @@ const playBtn = document.querySelector(".play-btn");
 const forwardBtn = document.querySelector(".forward-btn");
 const backwardBtn = document.querySelector(".backward-btn");
 
-//
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  console.log("sssssssss", btns[0].classList.add("active"))
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
 const handleClick = (field) => {
+  const tombol = document.getElementById(`tombol-${field}`);
   setMusic(field);
+  // tombol.classList.add("active");
+  // tombol.classList.remove("active");
+  // tombol.classList.toggle("active");
   if (playBtn.className.includes("pause")) {
     music.pause();
   } else {

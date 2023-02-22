@@ -12,7 +12,7 @@ let songs = [
       cover: "assets/images/cover 1.png"
    },
    {
-      name: "Lagu 1",
+      name: "Lagu Alfin",
       path: "assets/musics/Gurenge.mp3",
       artist: "LISA",
       cover: "assets/images/cover 2.png"
