@@ -74,6 +74,7 @@ body {
 
 .seek-bar {
    -webkit-appearance: none;
+   appearance: none;
    width: 100%;
    height: 5px;
    border-radius: 10px;
