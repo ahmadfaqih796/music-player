@@ -3,7 +3,8 @@ let currentMusic = 0;
 const data = document.getElementById("data");
 data.innerHTML = songs
   .map(
-    (val, index) => `<button onclick="setMusic(${index})">${val.name}</button>`
+    (val, index) =>
+      `<button onclick="handleClick(${index})">${val.name}</button>`
   )
   .join("");
 
@@ -18,6 +19,16 @@ const musicDuration = document.querySelector(".song-duration");
 const playBtn = document.querySelector(".play-btn");
 const forwardBtn = document.querySelector(".forward-btn");
 const backwardBtn = document.querySelector(".backward-btn");
+
+//
+const handleClick = (field) => {
+  setMusic(field);
+  if (playBtn.className.includes("pause")) {
+    music.pause();
+  } else {
+    music.play();
+  }
+};
 
 playBtn.addEventListener("click", () => {
   if (playBtn.className.includes("pause")) {
