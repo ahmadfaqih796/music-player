@@ -23,4 +23,10 @@ let songs = [
       artist: "LISA",
       cover: "assets/images/cover 3.png"
    },
+   {
+      name: "Lagu 3",
+      path: "assets/musics/Gurenge.mp3",
+      artist: "LISA",
+      cover: "assets/images/cover 4.png"
+   },
 ]
